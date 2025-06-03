@@ -1,0 +1,4 @@
+init: cria a estrutura inicial do projeto com suas funcionalidades
+
+- Define estrutura de pastas e arquivos do projeto
+- Gerencia dependências, ambiente virtual e configurações do seu projeto Python usando uv

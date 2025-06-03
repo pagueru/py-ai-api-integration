@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/*.egg-info": true,
+    },
+    "python.analysis.exclude": [
+        "**/.venv/**"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
