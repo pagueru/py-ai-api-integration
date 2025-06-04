@@ -25,6 +25,8 @@ dev = [
     "pre-commit>=4.0.1",
     "pytest-cov>=6.0.0",
     "mypy>=1.15.0",
+    "jupytext>=1.17.2",
+    "ipykernel>=6.29.5",
 ]
 
 [tool.pylint]
@@ -62,7 +64,7 @@ lint.ignore = [
     "T203",              # Permite o uso de pprint para depuração
     "ANN401",            # Permite o uso de Any em retornos de função para maior flexibilidade
     "S105",              # Permite o uso de senhas hardcoded em casos específicos
-    "TRY003",            # Permite o uso de mensagens longas fora da classe de exceção para maior detalhamento
+    "TRY003",            # Permite o uso de mensagens longas fora da classe de exceção
 
     # Permissõs temporárias para facilitar o desenvolvimento
     "D100",              # Ignora a regra que exige docstrings em módulos públicos

@@ -19,7 +19,7 @@ Cliente Python orientado a objetos para integração e testes de APIs de IA, com
 ```bash
 uv venv .venv
 source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate    # Windows
+.venv\Scripts\activate     # Windows
 uv sync
 ```
 
@@ -28,49 +28,40 @@ uv sync
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate    # Windows
+.venv\Scripts\activate     # Windows
 pip install -r requirements.txt  # ou instale manualmente as dependências
 ```
 
-## Configuração
+## Configuração e Uso
 
-* Copie o arquivo de exemplo e edite com sua chave:
+Copie o arquivo de exemplo e edite com sua chave:
 
-  ```bash
-  cp .env.example .env
-  ```
+```bash
+cp .env.example .env
+```
 
 No arquivo `.env`:
 
-  ```env
-  DEEPSEEK_API_KEY=seu_token_aqui
-  ```
+```env
+DEEPSEEK_API_KEY=seu_token_aqui
+```
 
-* Ajuste parâmetros em `src/config/settings.yaml` conforme necessário.
-
-## Uso
+Ajuste parâmetros em `src/config/settings.yaml` conforme necessário.
 
 Execute a aplicação principal:
 
-  ```bash
-  uv run python main.py
-  ```
-
-## Estrutura do Projeto
-
 ```bash
-src/
-├── common/          # Utilitários comuns
-├── config/          # Configurações (YAML, constantes)
-├── core/            # Classes base e erros
-└── repositories/    # Acesso a dados (SQLite)
+uv run python main.py
 ```
 
-## Roadmap
+## Próximos Passos
 
-* Suporte a OpenAI, Anthropic, Google, Grok
-* Integração com Telegram
-* Exemplos de uso e documentação incremental
+* Validação de suporte para todas as providers
+* Testes unitários e de integração
+* Melhoria da documentação de persistencia de dados
+* Implementações usando Jupyter
+* Dividir responsabilidades em módulos separados (utilitários)
+* Querys separadas em arquivos `.sql` para melhor organização
 
 ## Contato
 

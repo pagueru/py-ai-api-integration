@@ -1,0 +1,29 @@
+{
+    "id": "8ecb4098-d4d8-4e6f-8e15-40fc49fa4409",
+    "object": "chat.completion",
+    "created": 1748990439,
+    "model": "deepseek-chat",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Brasília."
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 24,
+        "completion_tokens": 4,
+        "total_tokens": 28,
+        "prompt_tokens_details": {
+            "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 24
+    },
+    "system_fingerprint": "fp_8802369eaa_prod0425fp8",
+    "prompt": "Explique IA em uma frase."
+}

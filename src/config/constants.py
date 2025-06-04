@@ -14,3 +14,6 @@ SETTINGS_FILE: Path = Path("./src/config/settings.yaml")
 
 BRT: ZoneInfo = ZoneInfo("America/Sao_Paulo")
 """Define o objeto de fuso horário para o horário de Brasília: `America/Sao_Paulo`"""
+
+SQL_DIR: Path = Path("./sql")
+"""Caminho para o diretório de arquivos SQL: `./sql`"""

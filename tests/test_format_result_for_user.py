@@ -2,7 +2,7 @@
 
 import pytest
 
-from main import LLMApiClient
+from repositories.ai_repository import AiRespository
 from src.core.base_class import BaseClass
 
 
@@ -17,7 +17,7 @@ class DummyEcho:
 @pytest.fixture
 def llm_client(monkeypatch):
     # Instancia o client e substitui echo por dummy
-    client = LLMApiClient()
+    client = AiRespository()
     dummy_echo = DummyEcho()
     # Corrige: monkeypatch no símbolo importado em main.py
     monkeypatch.setattr("main.echo", dummy_echo)
